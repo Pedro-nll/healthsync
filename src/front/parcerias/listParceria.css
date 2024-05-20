@@ -1,0 +1,235 @@
+body{
+    background-color: #001f36;
+   /* font-family: 'Allura', cursive;*/
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color:#1c5560;
+}
+
+.op{
+    margin-top: 20px;
+}
+
+.hide{
+    color: white;
+    display: none;
+}
+
+.envi{
+    display: flex;
+    justify-content: center;
+}
+
+.btnmanu{
+    color: white;
+    background: #0F5257;
+    border: 2px solid #0F5257;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnmanu:not(:last-child){
+    margin-right: 40px; 
+}
+
+.btnmanu:hover{
+    background: white;
+    color: #231a1b;
+}
+
+
+.Okplano{
+    display: flex;
+    flex-wrap: wrap;
+    top: 30px;
+    justify-content: center;
+}
+
+.emailsend{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.continua{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.f2{
+   font-family: 'Libre Baskerville', serif;
+}
+
+.principais{
+    font-size: 20px;
+    padding-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+
+.dropdown-menu{
+    background-color: transparent;
+    border: transparent;
+}
+
+.card{
+    color: black;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+
+.forum{
+    
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.first h1{
+    font-size: 70px;
+    font-family: 'Allura', cursive;
+    color: white;
+}
+
+.previw{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+h4{
+    color: white; 
+    font-family: 'Allura', cursive;
+    font-size: 35px;
+}
+
+
+
+
+
+.first{
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 0px;
+}
+
+.pcolor{
+    padding: 0px;
+    color: white;
+    width: 100%;
+}
+
+.navbar-logo {
+    float: left;
+}
+
+.reguaprv{
+    display: flex;
+    align-items: center;
+}
+
+
+.reguanaousada{
+
+    display: none;
+    transition: width 4.5s;
+    
+ }
+
+ .container {
+    width: 100%;
+    display: flex;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #231a1b;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+#carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+#carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+#community-posts {
+    list-style: none;
+    padding: 0;
+}
+#community-posts h2{
+    margin-right: 300px;
+    margin-top: 370px;
+}
+
+#community-posts li {
+    margin:-30px 0;
+    margin-left: 125px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bottom-buttons {
+    position: absolute;
+    left: 400px;
+    bottom: 150px;
+
+}
+
+.bottom-buttons button {
+    background-color: #0f5258;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Allura', cursive;
+}
+p {
+    font-family: 'Allura', cursive; /* Estilo de fonte para o título principal */
+    font-size: 90px;
+    margin-top: 40px;
+}

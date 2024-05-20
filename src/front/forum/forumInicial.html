@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthSync</title>
+
+
+  <!--Fontes google-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--css da pag-->
+  <link rel="stylesheet" href="forumInicial.css">
+  <!--ICONE DA ABA-->
+  <link rel="icon" href="../Assets/Logo/Logo.png">
+
+</head>
+
+<body>
+  <!----- Navbar ----->
+  <nav class="pcolor navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="../pagInicial/index.html">
+        <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+      </a>
+      <div class="principais">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" id="loginNavLink">
+            <a class="nav-link active text-white" aria-current="page" href="../pagLogin/Login.html">Login</a>
+          </li>
+          <li class="nav-item d-none" id="dashboardNavDiv">
+            <a class="nav-link active text-white" href="" id="dashboardLink">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown d-none" id="userIcon">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="../Assets/image 13.png" alt="" width="50rem">
+            </a>
+            <ul class="dropdown-menu pcolor">
+              <div class="card" style="width: 17rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="nomeCardUser">Nome info</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary" id="emailCardUser">email@info</h6>
+                  <h6>Data de criação de conta</h6>
+                  <p class="card-text" id="dataCriacaoContaUser">DA/TA/23</p>
+                  <a href="#" class="card-link" id="logoutBtn">Logout</a>
+                  <a href="#" class="card-link">Ok</a>
+                </div>
+              </div>
+            </ul> 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!----- Destaques ----
+  <div class="destaques">
+    <div class="textoprin">
+      <h1>Posts em destaque</h1>
+    </div>
+    <div class="carrosel">
+      <div class="slide">
+        <div class="imagensprincipas">
+          <input type="radio" name="button1" id="radio1">
+          <input type="radio" name="button1" id="radio2">
+          <input type="radio" name="button1" id="radio3">
+          <input type="radio" name="button1" id="radio4">
+          <input type="radio" name="button1" id="radio5">
+          <div class="imagem primeira">
+            <img src="https://picsum.photos/1150/550" alt="">
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/900/450?1" alt="">
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/900/450?2" alt="">
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/900/450?3" alt="">
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/900/450?4" alt="">
+          </div>
+          <div class="carrauto">
+            <div class="autobtn-1"></div>
+            <div class="autobtn-2"></div>
+            <div class="autobtn-3"></div>
+            <div class="autobtn-4"></div>
+            <div class="autobtn-5"></div>
+          </div>
+          <div class="carrmanu">
+            <label for="radio1" class="btnmanu"></label>
+            <label for="radio2" class="btnmanu"></label>
+            <label for="radio3" class="btnmanu"></label>
+            <label for="radio4" class="btnmanu"></label>
+            <label for="radio5" class="btnmanu"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <!----- Posts ----->
+  <div class="posts">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <div class="botoes">
+            <h4>Filtros</h4>
+            <div class='content'>
+              <div class="dpx">
+                <div class='py'>
+                  <label>
+                    <input type="radio" class="option-input radio" name="example" id="todosbtn" />
+                    Todos
+                  </label>
+                  <label>
+                    <input type="radio" class="option-input radio" name="example" id="nutriçãobtn" />
+                    Nutrição
+                  </label>
+                  <label>
+                    <input type="radio" class="option-input radio" name="example" id="exerciciobtn" />
+                    Exercício
+                  </label>
+                  <label>
+                    <input type="radio" class="option-input radio" name="example" id="outrosbtn" />
+                    Outros
+                  </label>
+                  <button type="button" class="btn btn-success" id="criarPostBtn">
+                    <div class="row">
+                    Criar post 
+                  </div>
+                     <div class="row">
+                    <i class="bi bi-plus-circle"></i>
+                  </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-8">
+              <button class="selectpost" id="postcom">
+                <h2>Posts Da comunidade</h2>
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="selectpost" id="postmeu">
+                <h2>Meus posts</h2>
+              </button>
+            </div>
+          </div>
+
+
+
+          <div class="container">
+            <div class="row">
+              <!-- POSTS COMUNIDADE -->
+              <div class="Pcomunidade" id="Pcomunidade">
+              </div> 
+              <!-- MEUS POSTS -->
+              <div class="Pmeu" id="Pmeu">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="foruminicial.js"></script>
+</body>
+
+</html>

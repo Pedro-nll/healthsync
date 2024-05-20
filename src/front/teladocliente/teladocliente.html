@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSync</title>
+    <!--Fontes google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Raleway:wght@100&display=swap"
+        re l="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Dependencia grafico  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <!--<link rel="stylesheet" href="path/to/your/charts.min.css">-->
+
+    <!--ICONE DA ABA-->
+    <link rel="icon" href="../Assets/Logo/Logo.png">
+
+    <!--css da pag-->
+    <link rel="stylesheet" href="teladocliente.css">
+
+</head>
+
+<body>
+    <nav class="pcolor navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="../pagInicial/index.html">
+                <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+            </a>
+            <div class="principais">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../Assets/image 13.png" alt="" width="50rem">
+                        </a>
+                        <ul class="dropdown-menu pcolor">
+                            <div class="card" style="width: 17rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="nomeCardUser">Nome info</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary" id="emailCardUser">email@info
+                                    </h6>
+                                    <h6>Data de criação de conta</h6>
+                                    <p class="card-text" id="dataCriacaoContaUser">DA/TA/23</p>
+                                    <a href="#" class="card-link" id="logoutBtn">Logout</a>
+                                    <a href="#" class="card-link">Ok</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item forum">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="../forum/forumInicial.html">Fórum</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!--Plano alimentar-->
+        <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-4">
+                <div class="infos">
+                    <h1>Plano alimentar</h1>
+                    <div class="row">
+                        <div class="center">
+                            <button class="btn btn-success btn-lg pedirnova" data-bs-toggle="modal"
+                                data-bs-target="#modalReceita" id="adicionarReceitaBtn">
+                                Adicionar receita
+                                <i class="bi bi-envelope"></i>
+                            </button>
+                            <div class="receitas col-12 fs-3">
+                                <p id="txtPlanoAlimentarAPI"> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1>Receitas</h1>
+                    <div class="container">
+                        <div class="center">
+                            <div class="receitas">
+                                <p id="txtReceitasApi" class="fs-3"> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Progresso-->
+            <div class="col-4">
+                <div class="infos border border-top-0 border-bottom-0 progresso">
+                    <h1>Progresso</h1>
+                    <div class="container">
+                        <div class="center">
+                            <div class="alone">
+                                <h2>Peso atual:</h2>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="Pesoatual" placeholder="Peso atual - Kg">
+                                <label for="Pesoatual">KG</label>
+                            </div>
+
+                        </div>
+                        <div class="center">
+                            <button type="button" id="Atualiagrafico" class="btn btn-success">Atualizar grafico</button>
+                        </div>
+                        <!-- <div class="row">
+                            <div id="curve_chart" style="width: 900px; height: 500px"></div>
+
+                        </div> -->
+                        <div class="grafico1">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="center">
+                            <button type="button" id="pedirNovosPlanosBtn" data-bs-toggle="modal"
+                                data-bs-target="#modalNovosPlanos" class="btn btn-danger">Pedir novos planos</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Plano de exercicio-->
+            <div class="col-4">
+                <div class="infos">
+                    <h1>Plano De Exercicios</h1>
+                    <div class="container">
+                        <div class="center">
+                            <div class="receitas">
+                                <h2>Fichas de treino</h2>
+                                <p id="txtPlanoExercicioAPI" class="fs-3"> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </main>
+    <div class="modal" tabindex="-1" id="modalReceita">
+        <div class="modal-dialog">
+            <div class="modal-content text-bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adicionar receita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nomeReceitaInput" class="form-label">Nome da Receita:</label>
+                            <input type="text" class="form-control" id="nomeReceitaInput"
+                                placeholder="Informe o nome da receita">
+                        </div>
+                        <div class="mb-3">
+                            <label for="kcalInput" class="form-label">KCAL:</label>
+                            <input type="text" class="form-control" id="kcalInput" placeholder="Informe as calorias">
+                        </div>
+                        <div class="mb-3">
+                            <label for="proteinaInput" class="form-label">Gramas de Proteína:</label>
+                            <input type="text" class="form-control" id="proteinaInput"
+                                placeholder="Informe as gramas de proteína">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ingredientesTextarea" class="form-label">Ingredientes:</label>
+                            <textarea class="form-control" id="ingredientesTextarea" rows="3"
+                                placeholder="Informe os ingredientes"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modoPreparoTextarea" class="form-label">Modo de Preparo:</label>
+                            <textarea class="form-control" id="modoPreparoTextarea" rows="3"
+                                placeholder="Informe o modo de preparo"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="receitaSaveBtn">Enviar
+                        receita</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modalNovosPlanos">
+        <div class="modal-dialog">
+            <div class="modal-content text-bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Escolha os planos os quais deseja mudar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-check-label" for="planoExerciciosCheckbox">
+                                Plano de Exercícios
+                            </label>
+                            <input type="checkbox" class="form-check-input" id="planoExerciciosCheckbox">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-check-label" for="planoAlimentarCheckbox">
+                                Plano Alimentar
+                            </label>
+                            <input type="checkbox" class="form-check-input" id="planoAlimentarCheckbox">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentariosTextarea" class="form-label">Comentários:</label>
+                            <textarea class="form-control" id="comentariosTextarea" rows="3"
+                                placeholder="Digite seus comentários"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="planosSaveBtn">Enviar
+                        pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="teladocliente.js"></script>
+
+</html>

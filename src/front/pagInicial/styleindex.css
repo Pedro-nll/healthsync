@@ -1,0 +1,393 @@
+
+
+/*----- Navbar -----*/
+.pcolor{
+    background-color: transparent;
+    color: (225,225,225, 0.4);
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.principais{
+    font-size: 20px;
+    padding-right: 100px;
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+   
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: transparent;
+}
+
+.card{
+    color: black;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+.navbar-logo {
+    float: left;
+}
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+/*----- NOT USE -----*/
+
+/*
+main{
+    width: 100%;
+    min-height: 160vh;
+}
+*/
+
+/*----- Primeira pagina home -----*/
+
+.home{
+    background-image: url(https://images.wallpaperscraft.com/image/single/apple_drops_black_background_118624_3840x2400.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position-y: end;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.titulo{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    
+}
+
+.chamada{
+    display: flex;
+    position: relative;
+    top: 500px;
+    color: white;
+
+}
+
+.titulo h1{
+    color: transparent;
+    font-size: 125px;
+    /*font-family: 'Dancing Script', cursive;*/ 
+    font-family: 'Libre Baskerville', serif;
+    background-image: linear-gradient(to top left,aqua , #0F5257);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.titulo h2{
+    color: white;
+    font-size: 75px;
+    font-family: 'Tilt Neon', sans-serif;
+ /*   font-family: 'Libre Baskerville', serif; */
+
+}
+
+/*----- Posts -----*/
+
+.tituloprincipal{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: 'Libre Baskerville', serif;
+}
+.carrosel{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slide{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imagensprincipas{
+    display: flex;
+    width: 500%;
+    height: 500px;  
+}
+.imagensprincipas input{
+    display: none;
+}
+
+.imagem{
+    width: 20%;
+    transition: 2s;
+}
+
+.imagem img{
+    width: 800px;
+    height: 500px;
+}
+
+.carrmanu{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnmanu{
+    border: 2px solid #0F5257;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.btnmanu:not(:last-child){
+    margin-right: 40px; 
+}
+
+.btnmanu:hover{
+    background: white;
+}
+
+#radio1:checked ~ .primeira{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .primeira{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .primeira{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .primeira{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .primeira{
+    margin-left: -80%;
+}
+
+.carrauto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.carrauto div {
+    border: 2px solid #0F5257;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.carrauto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .carrauto .autobtn-1{
+    background: #0F5257;
+}
+
+#radio2:checked ~ .carrauto .autobtn-2{
+    background: #0F5257;
+}
+
+#radio3:checked ~ .carrauto .autobtn-3{
+    background: #0F5257;
+}
+
+#radio4:checked ~ .carrauto .autobtn-4{
+    background: #0F5257;
+}
+
+#radio5:checked ~ .carrauto .autobtn-5{
+    background: #0F5257;
+}
+
+
+.container{
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+.clique{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: #FFFFFF;
+    /* top: 450px;
+    right: 30px; */
+    position: relative;
+}
+
+.clique a {
+    color: white;
+}
+
+.Entrar {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #0F5257;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 100px;
+  }
+  
+  .Entrar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .Entrar span:after {
+    content: '\2713';
+    color:white;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+  }
+  
+  .Entrar:hover span {
+    padding-right: 25px;
+  }
+  
+  .Entrar:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+/*----- Sobre nos -----*/
+
+  section{
+    background-color: #0F5257;
+    width: 100%;
+    min-height: 75vh;
+
+  }
+
+
+
+.posts{
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/13/17/14/vegetable-skewer-3317060_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.sobrenos{
+    width: 100%;
+    min-height: 100vh;
+  /*  background-image: url(https://img.freepik.com/fotos-premium/mulher-usando-smartphone_2034-1313.jpg?w=740);*/
+    background-image: url(../Assets/Backgrounds/PhotoReal_healthy_food_dark_background_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position-y:center;
+    overflow: hidden;
+}
+
+.sobre{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    display: block;
+    justify-content: center;
+    top: 100px;
+    position: relative;
+    padding: 40px;
+    color: white;
+    width: 50%;
+    border-radius: 40px;
+}
+
+.sobre p{
+    font-size:larger;
+}
+
+.sobre h1{
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 10px;
+}
+/*----- Uso -----*/
+.center{
+    justify-content: center;
+    display: flex;
+}
+
+.uso{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/fotos-premium/mulher-usando-smartphone_2034-1313.jpg?w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position-y:center;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+}
+.Instruções{
+    display: flex;
+    justify-content: end;
+    height: 400px;
+}
+
+/*----- Footer -----*/
+footer{
+    background-color: black;
+}
+
+footer h1 {
+    padding-top: 20px;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    display: block;
+}
+.parcerias{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.logop{
+    display: block;
+}

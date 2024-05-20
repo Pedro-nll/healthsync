@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="criar.css">
+    <title>HealthSync</title>
+</head>
+
+<body>
+
+    <nav class="pcolor navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="../pagInicial/index.html">
+                <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+            </a>
+            <div class="principais">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../Assets/image 13.png" alt="" width="50rem">
+                        </a>
+                        <ul class="dropdown-menu pcolor">
+                            <div class="card" style="width: 17rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="nomeCardUser">Nome info</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary" id="emailCardUser">email@info
+                                    </h6>
+                                    <h6>Data de criação de conta</h6>
+                                    <p class="card-text" id="dataCriacaoContaUser">DA/TA/23</p>
+                                    <a href="#" class="card-link" id="logoutBtn">Logout</a>
+                                    <a href="#" class="card-link">Ok</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item forum">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="../forum/forumInicial.html">Fórum</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--CRIAR PLANO ALIMENTAR-->
+    <div class="d-none planos" id="criarPlanoAlimentarDiv">
+        <!-- <div class="container"> -->
+        <div class="esqueletoplanos">
+            <div class="titulo">
+                <h1><span id="criarAvaliarSpan">Criar</span> <span id="planoAlimentarH1">plano alimentar</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="divisoria">
+                        <div class="linhas">
+                            <img src="../Assets/image 13.png" alt="Imagem" class="img-fluid">
+
+                            <h2 class="text-center"><span id="nomeInfo"></span></h2>
+                            <!-- Labels e campos de entrada -->
+                            <div id="hideAcessAnaliseUser">
+                                <div class="form-group">
+                                    <label for="label1">Peso inicial:<span id="pesoInfo"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label1">Histórico de peso:<span
+                                            id="historicoDePesoInfo"><br></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label2">Altura:<span id="alturaInfo"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label3">Sexo:<span id="sexoInfo"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label4">Idade:<span id="idadeInfo"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label5">Data do pedido:<span id="dataPedidoInfo"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label6">Tempo ativo no HealthSync:<span
+                                            id="tempoAtivoInfo"></span></label>
+                                </div>
+                            </div>
+                            <textarea class="quadro-branco d-none" placeholder="Comentários"
+                                id="comentariosTxtAlm"></textarea>
+                            <div>
+                                <button type="button" class="btn btn-danger d-none"
+                                    id="rejeitarPlanoAlimentar">Rejeitar</button>
+                                <button type="button" class="btn btn-success d-none"
+                                    id="aceitarPlanoAlimentar">Aceitar</button>
+                                <button type="button" class="btn btn-danger d-none"
+                                    id="rejeitarParceria">Rejeitar</button>
+                                <button type="button" class="btn btn-success d-none"
+                                    id="aceitarParceria">Aceitar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-7 ms-5">
+                    <div class="row" id="dadosEspecificosAlm">
+                        <div class="divisoria" id="obs">
+                            <div class="linhas">
+                                <div class="form-group">
+                                    <label for="label1">Alergias alimentares: <span id="alergiasInfo"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label2">Consumo de água: <span id="aguaInfo"></span></label>
+                                </div>
+                            </div>
+                            <div class="linhas">
+                                <div class="form-group">
+                                    <label for="label3">Consumo de Alcool e tabaco: <span
+                                            id="alcoolTabacoInfo"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label4">Nivel de atividade atual: <span
+                                            id="nivelAtividadeInfo"></span></label>
+                                </div>
+                            </div>
+                            <div class="linhas">
+                                <div class="form-group">
+                                    <label for="label5">Condições médias: <span
+                                            id="condicoesMedicasInfo"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label6">Medicações em uso: <span
+                                            id="medicacoesEmUsoInfo"></span></label>
+                                </div>
+                            </div>
+                            <div class="linhas">
+                                <div class="form-group">
+                                    <label for="label6">Objetivo: <span id="objetivoInfo"></span></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="label6">Deficiencias de vitaminas: <span
+                                            id="deficienciasVitaminasInfo"></span></label>
+                                </div>
+                            </div>
+                            <div class="linhas">
+                                <div class="form-group">
+                                    <label for="label6">Experiência anterior com dietas: <span
+                                            id="experienciaAnteriorDietaInfo"></span></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="label6">Preferências alimentares: <span
+                                            id="preferenciasAlimentaresInfo"></span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea class="quadro-branco" placeholder="Escreva aqui..." id="planoAlimentarTxt"></textarea>
+                    <button type="button" class="btn btn-success" id="enviarPlanoAlimentar">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- CRIAR PLANO DE EXERCICIO -->
+    <div class="d-none planos" id="criarPlanoExercicioDiv">
+        <div class="esqueletoplanos">
+            <div class="titulo">
+                <h1><span id="criarAvaliarSpanPE">Criar</span> plano exercicio</h1>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="divisoria">
+                        <div class="linhas">
+                            <img src="../Assets/image 13.png" alt="Imagem" class="img-fluid">
+
+                            <h2 class="text-center"><span id="nomeInfoPE"></span></h2>
+                            <!-- Labels e campos de entrada -->
+                            <div id="hideAcessAnaliseUserPE">
+                                <div class="form-group">
+                                    <label for="label1">Peso:<span id="pesoInfoPE"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label2">Altura:<span id="alturaInfoPE"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label3">Sexo:<span id="sexoInfoPE"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label4">Idade:<span id="idadeInfoPE"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label5">Data do pedido:<span id="dataPedidoInfoPE"></span></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="label6">Tempo ativo no HealthSync:<span
+                                            id="tempoAtivoInfoPE"></span></label>
+                                </div>
+                            </div>
+                            <textarea class="quadro-branco d-none" placeholder="Comentários"
+                                id="comentariosTxtPE"></textarea>
+                            <div>
+                                <button type="button" class="btn btn-danger d-none"
+                                    id="rejeitarPlanoExercicio">Rejeitar</button>
+                                <button type="button" class="btn btn-success d-none"
+                                    id="aceitarPlanoExercicio">Aceitar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 ms-5" id="dadosEspecificosPE">
+                    <div class="divisoria" id="divisoriaDadosEspecificosPeHide">
+                        <div class="form-group">
+                            <label for="label1">Quantidade de Exercicio desejada: <span
+                                    id="exercicioDesejadoInfo"></span></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="label1">Tempo diário disponível para exercicios: <span
+                                    id="horasDisponiveisInfo"></span></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="label3">Consumo de Alcool e tabaco: <span
+                                    id="alcoolTabacoInfoPE"></span></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="label4">Nivel de atividade atual: <span
+                                    id="nivelAtividadeInfoPE"></span></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="label5">Condições médias: <span id="condicoesMedicasInfoPE"></span></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="label6">Medicações em uso: <span id="medicacoesEmUsoInfoPE"></span></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="label6">Objetivo: <span id="objetivoInfoPE"></span></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="label6">Deficiencias físicas: <span id="deficienciasFisicasInfo"></span></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="label6">Experiência anterior com exercicio: <span
+                                    id="experienciaAnteriorExercicioInfo"></span></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="label6">Estabelecimentos disponíveis: <span
+                                    id="estabelecimentosInfo"></span></label>
+                        </div>
+                    </div>
+                    <textarea class="quadro-branco" placeholder="Escreva aqui..." id="planoExercicioTxt"></textarea>
+                    <button type="button" class="btn btn-success" id="enviarPlanoExercicio">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRIAR POST -->
+    <div class="text-white planos d-none" id="analisarReceitaDiv">
+        <div class="row">
+            <div class="titulo">
+                <h1><span id="criarAnalisarReceita">Analisar</span> receita</h1>
+            </div>
+            <div class="row">
+                <!--Nome receita-->
+                <div class="form-group">
+                    <label for="titulo">Nome da receita:</label>
+                    <input type="text" class="form-control" id="nomeReceita" placeholder="Digite o título">
+                </div>
+                <!-- Kcal -->
+                <div class="form-group">
+                    <label for="subtitulo">Kcal:</label>
+                    <input type="text" class="form-control" id="KcalTxt" placeholder="Digite o subtitulo">
+                </div>
+                <!-- Proteinas -->
+                <div class="form-group">
+                    <label for="subtitulo">Proteinas:</label>
+                    <input type="text" class="form-control" id="proteinasTxt" placeholder="Digite o subtitulo">
+                </div>
+                <!-- Ingredientes -->
+                <label for="subtitulo">Ingredientes:</label>
+                <textarea class="quadro-branco-2" placeholder="Escreva aqui..." id="ingredientesTxt"></textarea>
+                <!-- Modo preparo -->
+                <label for="subtitulo"> Modo preparo:</label>
+                <textarea class="quadro-branco-2" placeholder="Escreva aqui..." id="modoPreparoTxt"></textarea>
+                <button type="button" class="btn btn-success" id="aceitarReceita">Aceitar</button>
+            </div>
+        </div>
+    </div>
+    <!--ANALISAR RECEITA-->
+    <div class="text-white planos d-none" id="criarPostDiv">
+        <div class="row">
+            <div class="titulo">
+                <h1><span id="novoAvaliarSpan">Novo</span> post</h1>
+            </div>
+            <div class="row">
+
+
+
+                <textarea class="quadro-branco d-none" placeholder="Escreva seus comentários aqui"
+                    id="comentariosPostTxt"></textarea>
+                <button type="button" class="btn btn-danger d-none" id="rejeitarPost">Rejeitar</button>
+                <button type="button" class="btn btn-success d-none" id="aceitarPost">Aceitar</button>
+                <!--TITULO-->
+                <div class="form-group">
+                    <label for="titulo">Título:</label>
+                    <input type="text" class="form-control" id="tituloTxt" placeholder="Digite o título">
+                </div>
+                <!-- SUBTITULO -->
+                <div class="form-group">
+                    <label for="subtitulo">Subtítulo:</label>
+                    <input type="text" class="form-control" id="subtituloTxt" placeholder="Digite o subtitulo">
+                </div>
+                <!-- ESCOLHA DE CATEGORIA ENTRE NUTRIÇÃO EXERCICIO E OUTRAS-->
+                <div class="form-group">
+                    <label>Categoria:</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="nutricaoRad" name="categoria" value="nutricao">
+                        <label class="form-check-label" for="nutricao">Nutrição</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="exercicioRad" name="categoria"
+                            value="exercicio">
+                        <label class="form-check-label" for="exercicio">Exercício</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="outrasRad" name="categoria" value="outras">
+                        <label class="form-check-label" for="outras">Outras</label>
+                    </div>
+                </div>
+                <textarea class="quadro-branco" placeholder="Escreva aqui..." id="conteudoPostTxt"></textarea>
+                <button type="button" class="btn btn-success" id="enviarPost">Enviar</button>
+                <button type="button" class="btn btn-success d-none" id="reenviarPost">Re-enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="criar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+/* {
+  margin: 0;
+  padding: 0;
+  background-color: #231b1b;
+  color: white;
+  font-family: "Allura", cursive;
+  font-weight: normal;
+}*/
+/*----- Navbar -----*/
+.pcolor{
+  background-color:transparent;
+  color: white;
+  position: absolute;
+  width: 100%;
+ /* backdrop-filter: blur(5px);*/
+}
+
+.principais{
+  font-size: 20px;
+  padding-right: 100px;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+ 
+}
+.dropdown-menu{
+  background-color: transparent;
+  border: transparent;
+}
+
+.card{
+  color: black;
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 8px;
+}
+.navbar-logo {
+  float: left;
+}
+.icon {
+  display: none;
+  color: white;
+  font-size: 15px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+
+.row{
+  margin: 0px;
+}
+
+.Loginpage{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #001f36;
+  display: flex;
+  align-items: center;
+ /* justify-content: center; */
+ padding: 0px;
+}
+
+.imagemvolt{
+  width: 40%;
+}
+
+.circulo{
+  border-radius: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1755px) {
+  .circulo{
+    width: 60%;
+  }
+}
+
+
+.box {
+  background-color: transparent;
+/*  width: 30%; 
+  margin-left: 50px; */
+  border-radius: 40px;
+  padding: 20px;
+  color: white;
+}
+
+.imgprin{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /*font-family: 'Libre Baskerville', serif;
+  font-family: 'Dancing Script', cursive; */
+  font-family: 'Tilt Neon', sans-serif;
+  padding-bottom: 30px;
+}
+
+.imgprin h1{
+  font-size: 100px;
+ /* text-shadow: 2px 3px 0px white;*/
+  padding-right: 10px;
+  color: white; 
+}
+
+
+.usuario{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.usuario input{
+  text-align: center;
+  justify-content: center;
+  width: 75%;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.5;
+  color:black;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: 20px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.senha{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Tipo{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/*
+.tipologin{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+*/
+.form-select {
+  display: block;
+  width: 75%;
+  /*border-radius: 20px;*/
+}
+.senha input{
+  text-align: center;
+  justify-content: center;
+  width: 75%;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.5;
+  color:black;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: 20px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.buttonlogin{
+  display: flex;
+  justify-content: center;
+}
+.buttoncadastro{
+  display: flex;
+  justify-content: center;
+}
+
+
+.btnNotBS {
+  position: relative;
+  width: 50%;
+  font-size: 15px;
+  min-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+ /* padding: 1em 2.5em;*/
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: white !important;
+  background-color: #0f5257 !important;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.data{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.data input{
+  text-align: center;
+  justify-content: center;
+  width: 75%;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.5;
+  color:black;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: 20px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btnSave{
+  position: relative;
+  width: 30%;
+  font-size: 15px;
+  min-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+ /* padding: 1em 2.5em;*/
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: white !important;
+  background-color: #0f5257 !important;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.btnNotBScancel{
+  width: 30%;
+  font-size: 15px;
+  min-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+ /* padding: 1em 2.5em;*/
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: white !important;
+  background-color: #FF2C2C !important;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+

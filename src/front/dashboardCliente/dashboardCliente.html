@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSync</title>
+    <!--Fontes google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Raleway:wght@100&display=swap"
+        re l="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--ICONE DA ABA-->
+    <link rel="icon" href="../Assets/Logo/Logo.png">
+
+    <!--css da pag-->
+    <link rel="stylesheet" href="dashboardCliente.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="pcolor navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="../pagInicial/index.html">
+                <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+            </a>
+            <div class="principais">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../Assets/image 13.png" alt="" width="50rem">
+                        </a>
+                        <ul class="dropdown-menu pcolor">
+                            <div class="card" style="width: 17rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="nomeCardUser">Nome info</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary" id="emailCardUser">email@info
+                                    </h6>
+                                    <h6>Data de criação de conta</h6>
+                                    <p class="card-text" id="dataCriacaoContaUser">DA/TA/23</p>
+                                    <a href="#" class="card-link" id="logoutBtn">Logout</a>
+                                    <a href="#" class="card-link">Ok</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item forum">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="../forum/forumInicial.html">Fórum</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="primeiraparte" class="row">
+            <div class="first">
+                <h1>Cadastrar informações</h1>
+            </div>
+            <!--Formulario da esquerda-->
+            <div class="col-md-6">
+
+                <div class="form-container">
+                    <form action="#">
+                        <div class="row">
+
+
+                            <label for="sexoInput" class="form-label op">Sexo</label>
+                            <select class="form-select" id="sexoInput" name="sexo">
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                            </select>
+
+                            <label for="pesoInput" class="form-label op">Peso - KG</label>
+                            <input inputmode="numeric" pattern="[0-9.]+" autocomplete="off" required type="text"
+                                class="form-control" id="pesoInput">
+
+
+
+                            <label for="alturaInput" class="form-label op">Altura em metros</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9.]+" autocomplete="off" required
+                                class="form-control" id="alturaInput">
+                            <p id="alturaError" style="color: red; display: none;">A altura deve estar entre 1 e 2.5
+                                metros.</p>
+
+
+                            <!--<label for="input5" class="form-label op">Exames recentes</label>
+                                <input type="file" class="form-control" id="input5">-->
+
+                            <label for="medicacoesInput" class="form-label op">Medicações em uso *opcional</label>
+                            <input type="text" class="form-control" id="medicacoesInput">
+
+                            <label for="condicoesMedicasInput" class="form-label op">Condições médicas
+                                pré-existentes *opcional</label>
+                            <input type="text" class="form-control" id="condicoesMedicasInput">
+
+
+                            <label for="horasSonoInput" class="form-label op">Horas de sono</label>
+                            <input type="number" inputmode="numeric" pattern="[0-9.]+" autocomplete="off" required
+                                class="form-control" id="horasSonoInput">
+
+                            <!--<label for="input5" class="form-label op">Foto</label>
+                                <input type="file" class="form-control" id="input5">-->
+                            <label for="alcoolTabacoInput" class="form-label op">Hábitos de consumo de álcool e
+                                tabaco</label>
+                            <input type="text" class="form-control" id="alcoolTabacoInput">
+
+
+                            <!--Botões radio-->
+
+
+                            <div class="row">
+                                <div class="col-md-6 op">
+                                    <h4>Objetivo</h4>
+                                    <div class="col-md-6">
+                                        <div class="form-check" id="teste">
+                                            <input class="form-check-input objetivoOpcao" type="radio"
+                                                name="opcaoObjetivo" id="Obopcao1" value="1">
+                                            <label class="form-check-label" for="Obopcao1">
+                                                Perder peso
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input objetivoOpcao" type="radio"
+                                                name="opcaoObjetivo" id="Obopcao2" value="2">
+                                            <label class="form-check-label" for="Obopcao2">
+                                                Ganhar massa magra
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input objetivoOpcao" type="radio"
+                                                name="opcaoObjetivo" id="Obopcao3" value="3">
+                                            <label class="form-check-label" for="Obopcao3">
+                                                Ter uma vida mais saudável
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 op">
+
+                                    <h4>Nível de atividade atual</h4>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input opcaoAtividade" type="radio"
+                                                name="opcaoAtividade" id="Atvopcao1" value="1">
+                                            <label class="form-check-label" for="Atvopcao1">
+                                                0x por semana
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input opcaoAtividade" type="radio"
+                                                name="opcaoAtividade" id="Atvopcao2" value="2">
+                                            <label class="form-check-label" for="Atvopcao2">
+                                                2-3x por semana
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input opcaoAtividade" type="radio"
+                                                name="opcaoAtividade" id="Atvopcao3" value="3">
+                                            <label class="form-check-label" for="Atvopcao3">
+                                                4x ou mais por semana
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button type="button"
+                            class="btn btn-light btn btn-custom btn-md mx-auto d-block form-left-button"
+                            id="salvarDadosGerais">Salvar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="previw">
+                    <div class="reguaprv">
+                        <img id="regua" class="reguanaousada" src="../Assets/CadastroBody/Reguaaltura.png" alt="">
+                        <!--Altura 120-->
+                    </div>
+                    <div class="corpopreviw" id="homembranco">
+                        <img id="imagemHbranco" src="../Assets/CadastroBody/Menwhite.png" alt=""> <!--Altura 216-->
+                    </div>
+                    <div class="corpopreviw" id="mulherbranca">
+                        <img id="imagemMbranco" src="../Assets/CadastroBody/Womanwhite.png" alt=""> <!--Altura 216-->
+                    </div>
+                    <div class="info">
+                        <div class="row">
+                            <div id="pesopreviw">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="alturapreviw">
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div id="imcpreviw">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="segundaparte" class="row">
+            <div class="col-md-4 col-12 form-middle">
+                <div id="planoAlmForm">
+                    <div class="plano" id="planoAlm">
+                        <div class="form-container">
+                            <form action="#">
+                                <h1 class="text-center">Plano alimentar</h1>
+                                <div class="mb-3">
+                                    <label for="input7" class="form-label">Alergias alimentares</label>
+                                    <input type="text" class="form-control" id="alergiasInput">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="input7" class="form-label">Deficiências de vitaminas ou
+                                        minerais?</label>
+                                    <input type="text" class="form-control" id="deficienciasVit">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="input7" class="form-label">Experiência anterior em dietas ou planos
+                                        alimentares</label>
+                                    <input type="text" class="form-control" id="experienciaAnteriorInput">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="input7" class="form-label">Consumo de água diário</label>
+                                    <input type="text" class="form-control" id="consumoAgua">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="input8" class="form-label">Preferências alimentares</label>
+                                    <input type="text" class="form-control" id="preferenciasAlimentares">
+                                </div>
+                                <div class="mb-3">
+
+                                </div>
+                                <div class="mb-3">
+                                </div>
+                                <button type="button" id="botaoAlmHide"
+                                    class="btn btn-light btn btn-custom btn-md mx-auto d-block form-middle-button">Solicitar
+                                    Plano</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hide" id="planoAlmEnviado">
+                        <div class="Okplano">
+                            <div class="emailsend">
+                                <img src="../Assets/Check/mail-download.gif">
+                            </div>
+                            <div class="envi">
+                                <div class="row">
+                                    <h1>Plano enviado !</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PLANO RECEBIDO-->
+                <!-- NEI MUDA ISSO AQ PRA COLOCAR O GIF -->
+                <div id="planoRecebido" class="d-none">
+                    <div class="emailsend">
+                        <img src="../Assets/Check/recebido.gif" alt="" srcset="" width="650rem">
+                    </div>
+                    <h1 class="text-center text-white">Plano alimentar</h1>
+                    <button type="button" class="btn btn-light btn btn-custom btn-md mx-auto d-block form-right-button"
+                        id="analisarBtnPlanoAlm"> Analisar</button>
+                </div>
+                <div id="planoAlimentarFeito" class="d-none text-white">
+                    <div class="planoaliment">
+                        <div class="emailfim">
+                            <img src="../Assets/Check/dia-mundial-da-alimentacao_572614-287.avif" alt="">
+                        </div>
+                        <h1>Plano disponível!</h1>
+                    </div>
+                    <p>Para acessar seu plano clique em continuar!</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12 form-right">
+                <div id="PEForm">
+                    <div class="plano" id="planoex">
+                        <div class="form-container">
+
+                            <form>
+                                <h1 class="text-center">Plano de exercicios</h1>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="input1" class="form-label">Quantas vezes deseja se exercitar por
+                                            semana?</label>
+                                        <input type="text" class="form-control" id="qntsVezesInput">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="input2" class="form-label">Tempo diário para atividades
+                                            físicas</label>
+                                        <input type="text" class="form-control" id="tempoDiarioInput">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="input7" class="form-label">Experiência anterior em treinamento
+                                            físico</label>
+                                        <input type="text" class="form-control" id="experienciaExercicioInput">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="input7" class="form-label">Estabelecimentos disponíveis para se
+                                            exercitar
+                                            (ex.: Academia, piscina...)</label>
+                                        <input type="text" class="form-control" id="estabelecimentosInput">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="input8" class="form-label">Deficiências físicas ou impedimentos
+                                            notáveis</label>
+                                        <input type="text" class="form-control" id="deficienciasFisicasInput">
+                                    </div>
+                                </div>
+                                <button type="button" id="botaoExHide"
+                                    class="btn btn-light btn btn-custom btn-md mx-auto d-block form-right-button">
+                                    Solicitar Plano
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hide" id="planoExEnviado">
+                        <div class="Okplano">
+                            <div class="emailsend">
+                                <img src="../Assets/Check/mail-download.gif">
+                            </div>
+                            <div class="envi">
+                                <div class="row">
+                                    <h1>Plano enviado !</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PLANO RECEBIDO-->
+                <!-- nei muda isso aq tbm-->
+                <div id="planoEXRecebido" class="d-none">
+                    <div class="emailsend">
+                        <img src="../Assets/Check/recebido.gif" alt="" srcset="" width="650rem">
+                    </div>
+                    <h1 class="text-center text-white">Plano Exercicio</h1>
+                    <button type="button" class="btn btn-light btn btn-custom btn-md mx-auto d-block form-right-button"
+                        id="analisarPE"> Analisar</button>
+                </div>
+                <div id="planoEXFeito" class="d-none text-white">
+                    <div class="planoaliment">
+                    <div class="emailfim">
+                        <img src="../Assets/Check/pngtree-vector-excercise-icon-png-image_872391.jpg" alt="">
+                    </div>
+                    <h1>Plano disponível!</h1>
+                </div>
+                    <p>Para acessar seu plano clique em continuar!</p>
+                </div>
+            </div>
+
+
+            <div class="container d-flex continua d-none" id="continuarBtn">
+                <div class="continua">
+                    <button type="button" class="btn btn-light btn btn-custom btn-md mx-auto d-block form-right-button">
+                        Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="dashboardCliente.js"></script>
+
+</body>
+
+</html>

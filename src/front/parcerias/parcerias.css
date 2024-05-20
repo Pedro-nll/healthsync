@@ -1,0 +1,401 @@
+body{
+    background-color: #001f36;
+   /* font-family: 'Allura', cursive;*/
+    font-weight: normal;
+    overflow-x: hidden;
+    
+}
+
+    .cor {
+        color: #fff;
+    }
+
+    .form__label {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        margin-top: 0.7rem;
+        display: block;
+        transition: all 0.3s;
+        transform: translateY(0rem);
+    }
+
+    .form__input {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        width: 100%;
+        display: block;
+        border-bottom: 0.3rem solid transparent;
+        transition: all 0.3s;
+    }
+
+    .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(+4rem);
+    transform: translateY(+4rem);
+    }
+
+
+
+
+
+.navbar {
+    background-color:#1c5560;
+}
+
+.op{
+    margin-top: 20px;
+}
+
+.hide{
+    color: white;
+    display: none;
+}
+
+.envi{
+    display: flex;
+    justify-content: center;
+}
+
+.Okplano{
+    display: flex;
+    flex-wrap: wrap;
+    top: 30px;
+    justify-content: center;
+}
+
+.emailsend{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.continua{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.f2{
+   font-family: 'Libre Baskerville', serif;
+}
+
+.principais{
+    font-size: 20px;
+    padding-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+
+.dropdown-menu{
+    background-color: transparent;
+    border: transparent;
+}
+
+.card{
+    color: black;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+
+.forum{
+    
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.first h1{
+    font-size: 70px;
+    font-family: 'Tilt Neon', sans-serif;
+    color: white;
+}
+
+.previw{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+h4{
+    color: white; 
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 35px;
+}
+
+
+
+
+
+.first{
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 0px;
+}
+
+.pcolor{
+    padding: 0px;
+    color: white;
+    width: 100%;
+}
+
+.navbar-logo {
+    float: left;
+}
+
+.reguaprv{
+    display: flex;
+    align-items: center;
+}
+
+
+.reguanaousada{
+
+    display: none;
+    transition: width 4.5s;
+    
+ }
+
+ .container {
+    width: 100%;
+    display: flex;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #231a1b;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+#carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+#carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+#community-posts {
+    list-style: none;
+    padding: 0;
+}
+#community-posts h2{
+    margin-right: 300px;
+    margin-top: 370px;
+}
+
+#community-posts li {
+    margin:-30px 0;
+    margin-left: 125px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bottom-buttons {
+    position: absolute;
+    left: 400px;
+    bottom: 150px;
+
+}
+
+.bottom-buttons button {
+    background-color: #0f5258;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+
+/* #carouselExampleCaptions {
+    margin-top: 20px; /* Adicione uma margem superior de 20px */
+   /* max-height: 300px; /* Reduza a altura máxima do carrossel para 300px (ajuste conforme necessário) */
+    /*width: 60%; /* Reduza a largura do carrossel para 80% (ajuste conforme necessário) */
+    /*margin-left: auto; /* Alinhe o carrossel à direita */
+    /*margin-right: auto; /* Alinhe o carrossel à direita */
+  /*}
+  .resaurante {
+    /* Use classes Bootstrap para espaçamento superior e inferior */
+   /* margin-top: 100px;
+    margin-bottom: -20px;
+    /* Outros estilos, se necessário */
+    /*color: white;
+    /*font-family:'Allura', cursive;
+  /*}
+
+  .titulo{
+    font-family:'Allura', cursive;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: white;
+  }
+  h3{
+    font-family:'Allura', cursive;
+    font-size: 50px;
+  }
+ 
+  .conteudoRestaurante{
+    
+    color: white;
+    display: flex;
+    margin-left: 15px;
+    
+  }
+ 
+
+
+  .conteudoRestaurante section {
+    margin-bottom: 20px; /* Isso adicionará um espaçamento de 20 pixels entre as seções */
+/*}
+.preco{
+    margin-top: 20px;
+    height: max-content; /* Defina a altura desejada */
+    /*width: max-content; /* Defina a largura desejada (100% ocupará toda a largura disponível) */
+    
+/*}
+.imagem{
+    height: max-content; /* Defina a altura desejada */
+    /*width: max-content; /* Defina a largura desejada (100% ocupará toda a largura disponível) */
+/*}
+
+/*.restaurante p{
+    max-width: 500px;
+    width: 100%;
+}
+
+.section1{
+    min-height: 50vh; 
+    color: white; 
+    text-align: center; 
+    margin-top: 10rem;
+}
+h3{
+    text-align: left; 
+    margin-left: 1.7rem;
+}
+.div{
+    text-align: justify;
+}
+
+.paragrafodesconto{
+    font-size:2rem;
+}
+.paragrafopreco{
+    font-size:1.6rem;
+}
+s{
+    color: red;
+}
+.img-container{
+    margin-top: -2.4rem;
+    overflow: hidden;
+    cursor:grab;
+}
+
+.img-container img{
+   
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+
+ .img-container:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(2.2);
+ }
+
+*/
+ h1 {
+    font-family: 'Tilt Neon', sans-serif;
+    color: white; /* Cor do título principal */
+    align-items: center;
+}
+
+form {
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: 20px auto; /* Centraliza o formulário na página */
+}
+
+label {
+    display: block; /* Exibe os rótulos em uma nova linha */
+    margin-bottom: 5px; /* Espaçamento inferior dos rótulos */
+}
+
+input {
+    width: 100%; /* Preenche a largura do contêiner pai */
+    padding: 8px; /* Espaçamento interno dos campos de entrada */
+    margin-bottom: 15px; /* Espaçamento inferior dos campos de entrada */
+    box-sizing: border-box; /* Evita que as bordas e o preenchimento aumentem a largura total */
+}
+
+button {
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Altera o cursor ao pairar sobre o botão */
+}
+
+button:hover {
+    background-color: #218838; /* Cor de fundo do botão ao passar o mouse */
+}
+
+a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove a sublinhado padrão dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+}dos links 
+*/{
+    text-decoration: none; /* Remove a sublinhado padrão dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+}

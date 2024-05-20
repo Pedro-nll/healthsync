@@ -1,0 +1,160 @@
+
+.row{
+    margin-right: 0px;
+}
+
+
+/*----- Navbar -----*/
+.pcolor {
+    background-color: #0F5257;
+    color: white;
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.principais {
+    font-size: 20px;
+    padding-right: 100px;
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    border: transparent;
+}
+
+.card {
+    color: black;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 8px;
+}
+
+.navbar-logo {
+    float: left;
+}
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    background-color: #231B1B;
+    width: 100%;
+    /*height: 100vh;*/
+    color: white;
+    font-family: 'Tilt Neon', sans-serif;
+    min-height: 100vh;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.infos h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.pedirnova,
+.pedirnova:hover,
+pedirnova:active,
+pedirnova:focus
+{
+   /* background-color: #0F5257; */
+    color: white;
+    /* width: 50%; */
+    justify-content: center;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    display: flex;
+
+}
+
+button.pedirnova i {
+  margin-left: 10px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.receitas h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.opcoes h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.opcoes{
+    margin-bottom: 35px;
+}
+
+.listareceita{
+    margin-left: 30px;
+}
+
+.listareceita li{
+    background-color: transparent;
+    color: white;
+}
+
+.form-floating{
+    width: 50%;
+    display: flex;
+}
+.alone{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-control,
+.form-control:hover,
+.form-control:active,
+.form-control:focus{
+    background-color: transparent;
+    color: white;
+}
+label[for="Pesoatual"],
+label[for="Pesoatual"] :hover,
+label[for="Pesoatual"] :active,
+label[for="Pesoatual"] :focus{
+    background-color: transparent; 
+    color: #FFFFFF; 
+  }
+
+
+
+/* Grafico */
+
+  #my-chart {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  

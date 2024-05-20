@@ -1,0 +1,72 @@
+
+/*----- Navbar -----*/
+.pcolor{
+    background-color: #0F5257;
+    color: white;
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.principais{
+    font-size: 20px;
+    padding-right: 100px;
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+   
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: transparent;
+}
+
+.card{
+    color: black;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+.navbar-logo {
+    float: left;
+}
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+
+
+
+/* ----------------------------- */
+
+main{
+    background-color: #001f36;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.gurpo{
+    color: white;
+    display: flex;
+    width: 100%;
+    padding-top: 60px;
+    justify-content: center;
+}
+
+.form-check{
+    color: white;
+    font-family: 'Tilt Neon', sans-serif;
+
+}

@@ -1,0 +1,27 @@
+---
+title: HealthSync
+authors:
+  - family-names: Areas Ferreira
+    given-names: Carlos Henrique 
+  - family-names: Almeida Neto
+    given-names: Lúcio 
+  - family-names: Cadete Silva
+    given-names: Luidi 
+  - family-names: Leão Lambert
+    given-names: Pedro
+  - family-names: Mendes Rabelo
+    given-names: Sophia  
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alonso Veloso
+    given-names: Eveline
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Belém
+    given-names: Felipe de Castro 
+cff-version: 1.1.0
+keywords:
+  - Saúde
+  - Processos de Negócio
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2023-2-ti2-3687100-healthsync
+date-released: 2023-12-21

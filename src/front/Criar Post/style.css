@@ -1,0 +1,105 @@
+body{
+    background-color: #001f36;
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: normal;
+}
+.text {
+    color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+
+}
+h1 {
+    font-size: 55px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+.subtitulo {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 3px;
+    width: 350px;
+    color: #000;
+    font-family: 'arial';
+    font-size: 18px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    
+}
+
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #001f36;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.checkmark {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 3px;
+    display: none;
+    
+}
+.checkbox input[type="checkbox"]:checked + .checkmark {
+    display: block;
+}
+.quadro-branco {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #0F5257;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-logo {
+    float: left;
+}
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+

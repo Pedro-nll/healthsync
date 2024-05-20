@@ -1,0 +1,57 @@
+body{
+    background-color: #001f36;
+    font-family: 'Allura', cursive;
+    font-weight: normal;
+}
+.text {
+    color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 35px;
+}
+h4 {
+    font-size: 28px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #0F5257;
+    font-family: 'Allura', cursive;
+}
+
+.navbar a {
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-logo {
+    float: left;
+}
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+
+
+
+

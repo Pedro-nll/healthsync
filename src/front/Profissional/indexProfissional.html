@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleProfissional.css">
+
+    <title>HealthSync</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="pcolor navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="../pagInicial/index.html">
+                <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+            </a>
+            <div class="principais">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../Assets/image 13.png" alt="" width="50rem">
+                        </a>
+                        <ul class="dropdown-menu pcolor">
+                            <div class="card" style="width: 17rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="nomeCardUser">Nome info</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary" id="emailCardUser">email@info
+                                    </h6>
+                                    <h6>Data de criação de conta</h6>
+                                    <p class="card-text" id="dataCriacaoContaUser">DA/TA/23</p>
+                                    <a href="#" class="card-link" id="logoutBtn">Logout</a>
+                                    <a href="#" class="card-link">Ok</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item forum">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="../forum/forumInicial.html">Fórum</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="workspace">
+
+        <div class="col-md-4 ml-auto flex-column divisoria" id="cardLateral">
+
+            <img src="img/img/image 13.png" alt="Imagem" class="img-fluid">
+
+            <h2 class="text-center"><span id="nomeInfo"></span></h2>
+            <!-- Labels e campos de entrada -->
+            <div class="form-group d-none" id="tituloPostInfo">
+                <label for="label1">Titulo:<span id="tituloInfo"></span></label>
+            </div>
+            <div class="form-group d-none" id="categoriaPostInfo">
+                <label for="label1">Categoria:<span id="categoriaInfo"></span></label>
+            </div>
+            <div class="form-group" id="pesoUserInfo">
+                <label for="label1">Peso:<span id="pesoInfo"></span></label>
+            </div>
+
+            <div class="form-group" id="alturaUserInfo">
+                <label for="label2">Altura:<span id="alturaInfo"></span></label>
+            </div>
+
+            <div class="form-group" id="sexoUserInfo">
+                <label for="label3">Sexo:<span id="sexoInfo"></span></label>
+            </div>
+
+            <div class="form-group" id="idadeCard">
+                <label for="label4">Idade:<span id="idadeInfo"></span></label>
+            </div>
+
+            <div class="form-group" id="dataCard">
+                <label for="label5">Data do pedido:<span id="dataPedidoInfo"></span></label>
+            </div>
+
+            <div class="form-group" id="tempoCard">
+                <label for="label6">Tempo ativo no HealthSync:<span id="tempoAtivoInfo"></span></label>
+            </div>
+            <div class="finalizarbtn">
+                <button type="button" class="btn btn-light" id="btnfazer">Fazer plano</button>
+                <button type="button" class="btn btn-light" id="btnvalidarPost">Validar</button>
+                <button type="button" class="btn btn-light d-none" id="btnvalidarReceita">Validar</button>
+            </div>
+        </div>
+        <button class="btn btn-info d-none" id="cadastrarUmaParceria" >Cadastrar uma parceria</button>
+
+        <!-- Botões -->
+        <div class="col-md-8 botoes">
+            <div class="row">
+                <div class="col-md-3 alturabotao">
+                    <button id="mostrarPlanos" class="btn btn-light "> Planos</button>
+                </div>
+                <div class="col-md-3 alturabotao">
+                    <button id="mostrarPostagens" class="btn btn-light"> Postagens</button>
+                </div>
+                <div class="col-md-3 alturabotao" id="mostrarReceitasHide">
+                    <button id="mostrarReceitas" class="btn btn-light"> Receitas</button>
+                </div>
+                <div class="col-md-3 alturabotao" id="parceriasHide">
+                    <button id="mostrarReceitas" class="btn btn-light"> Suas Parcerias</button>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="conteudo">
+                    <!-- Divs de Sobreposição -->
+
+
+                    <div id="divPlanos" class="overlay">
+                        <h2>Planos</h2>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6 radio" >
+                                    <ul class="list-group list-group-flush" id="planosParaFazer">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="divPostagens" class="overlay">
+                        <h2>Postagens</h2>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6 radio" >
+                                    <ul class="list-group list-group-flush" id="postsParaAnalisar">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="divReceitas" class="overlay">
+                        <h2>Receitas</h2>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6 radio">
+                                    <ul class="list-group list-group-flush" id="receitasParaAnalisar">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="suasParcerias" class="d-none text-white">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="scriptProfissional.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HealthSync</title>
+        <!--css da pag-->
+        <link rel="stylesheet" href="indicadores.css">
+        <!--Fontes google-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+          rel="stylesheet">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Raleway:wght@100&display=swap"
+          rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+      
+        <!--BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+          <script src="indicadores.js"></script>
+        <!--ICONE DA ABA-->
+        <link rel="icon" href="../Assets/Logo/Logo.png">
+      
+      </head>
+<body>
+    <nav class="pcolor navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="../pagInicial/index.html">
+            <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+          </a>
+          <div class="principais">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" id="loginNavLink">
+                <a class="nav-link active text-white" aria-current="page" href="../pagLogin/Login.html">Login</a>
+              </li>
+              <li class="nav-item d-none" id="dashboardNavDiv">
+                <a class="nav-link active text-white" href="" id="dashboardLink">Dashboard</a>
+              </li>
+              <li class="nav-item dropdown d-none" id="userIcon">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../Assets/image 13.png" alt="" width="50rem">
+                </a>
+                <ul class="dropdown-menu pcolor">
+                  <div class="card" style="width: 17rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" id="nomeCardUser">Nome info</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary" id="emailCardUser">email@info</h6>
+                      <h6>Data de criação de conta</h6>
+                      <p class="card-text" id="dataCriacaoContaUser">DA/TA/23</p>
+                      <a href="#" class="card-link" id="logoutBtn">Logout</a>
+                      <a href="#" class="card-link">Ok</a>
+                    </div>
+                  </div>
+                </ul> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main>
+        <div class="gurpo">
+           
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent">
+                    <div class="form-check align-center text-center ">
+                        <h1>visualização dos indicadores</h1>
+                    </div>
+                </li>
+
+                <li class="list-group-item bg-transparent">
+                    <div class="form-check align-bottom ">
+                        <h3>Planos alimentares criados por dia</h3>
+                        <p id="planosAlmCriadosPorDia"></p>
+                    </div>
+                </li>
+                <li class="list-group-item bg-transparent">
+                    <div class="form-check align-bottom ">
+                        <h3>Planos de exercicio criados por dia</h3>
+                        <p id="planosExCriadosPorDia"></p>
+                    </div>
+                </li>
+                <li class="list-group-item bg-transparent">
+                    <div class="form-check align-bottom ">
+                        <h3>Posts ainda sem avaliação de um profissional</h3>
+                        <p id="postsNaoAvaliados"></p>
+                    </div>
+                </li>
+                <li class="list-group-item bg-transparent">
+                    <div class="form-check align-bottom ">
+                        <h3>Percentual de posts pertencentes a cada uma das categorias disponíveis</h3>
+                        <p id="percentualPorCategoria"></p>
+                    </div>
+                </li>
+                <li class="list-group-item bg-transparent">
+                    <div class="form-check align-bottom ">
+                        <h3>Percentual de clientes que fizeram progresso em direção aos seus objetivos iniciais</h3>
+                        <p id="percentualDeClientesPositivos"></p>
+                    </div>
+                </li>
+              </ul>
+        </div>
+    </main>
+</body>
+</html>

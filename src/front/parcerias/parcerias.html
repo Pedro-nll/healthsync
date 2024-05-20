@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parcerias</title>
+    <link rel="stylesheet" type="text/css" href="parcerias.css">
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontes google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Raleway:wght@100&display=swap"
+        re l="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--ICONE DA ABA-->
+    <link rel="icon" href="../Assets/Logo/Logo.png">
+
+    <!--css da pag-->
+    <link rel="stylesheet" href="parcerias.css">
+
+</head>
+
+<body>
+<!--Navbar-->
+<nav class="pcolor navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="../pagInicial/index.html">
+            <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+        </a>
+        <div class="principais">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../Assets/image 13.png" alt="" width="50rem">
+                    </a>
+                    <ul class="dropdown-menu pcolor">
+                        <div class="card" style="width: 17rem;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="nomeCardUser">Nome info</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary" id="emailCardUser">email@info
+                                </h6>
+                                <h6>Data de criação de conta</h6>
+                                <p class="card-text" id="dataCriacaoContaUser">DA/TA/23</p>
+                                <a href="#" class="card-link" id="logoutBtn">Logout</a>
+                                <a href="#" class="card-link">Ok</a>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item forum">
+                    <a class="nav-link active text-white" aria-current="page"
+                        href="../forum/forumInicial.html">Fórum</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <main>
+        <h1 class="text-center">Adicionar Nova Parceria</h1>
+        <div class="cor">
+        <form id="parceriaForm">
+            
+            <div class="form__group mb-2">
+                <label for="Nome" class="form__label">Nome</label>
+              <input type="text" class="form__input" id="nome" placeholder="Nome" required="" />
+
+            </div>
+            <div class="form__group mb-2">
+                <label for="Descrição" class="form__label">Descrição</label>
+                <input type="text" class="form__input" id="descricao" placeholder="Descrição" required="" />
+              </div>
+              <div class="form__group mb-5">
+                <label for="Preço" class="form__label">Preço</label>
+                <input type="text" class="form__input" id="preco" placeholder="Preço" required="" />
+              </div>
+
+            
+
+    
+            <button id="criarbtn" type="button">Adicionar Parceria</button>
+        </form>
+    </div>
+    <h4 class="text-center"><a href="listparceria.html">Ver Lista de Parcerias</a></h4>
+         
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="parceria.js"></script>
+</body>
+</html>

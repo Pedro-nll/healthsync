@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <!--Fontes google-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!--css da pagina-->
+  <link rel="stylesheet" href="Login.css" />
+  <!--ICONE DA PAGINA-->
+  <link rel="icon" href="../Assets/Logo/Logo.png">
+</head>
+
+<body>
+   <!--Navbar-->
+   <nav class="pcolor navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="../pagInicial/index.html">
+            <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+        </a>
+    </div>
+</nav>
+  <main>
+    <div class="contaier">
+      <div class="row">
+    
+    <div class="Loginpage">
+      <div class="col-6">
+      <div class="box">
+        <div class="imgprin">
+          <h1>Login</h1>
+         <!-- <img src="../Assets/Logo/Logo.png" alt="" width="160rem" class="w" id="logo" draggable="false" />-->
+        </div>
+
+
+        <div class="usuario">
+          <input type="text" class="form-control" id="usuarioLogin" placeholder="Usuario" />
+        </div>
+
+        <div class="senha">
+          <input type="password" class="form-control" id="senhaLogin" placeholder="Senha" />
+        </div>
+
+        <div class="Tipo">
+        <select class="form-select" aria-label="Default select example" id="tipoLogin">
+          <option selected value="-1">Tipo de usuário</option>
+          <option value="1">Cliente</option>
+          <option value="2">Nutricionista</option>
+          <option value="3">Profissional relacionado a exercício físico</option>
+        </select>
+      </div>
+
+        <div class="buttonlogin">
+          <button type="button" class="btnNotBS" id="loginBtn">Login</button>
+        </div>
+        <div class="buttoncadastro">
+          <button type="button" class="btnNotBS" data-bs-toggle="modal" data-bs-target="#modalCadastro">
+            Cadastre-se
+          </button>
+        </div>
+      
+        <!-- Modal de cadastro -->
+        <div class="modal fade align-content-center align-items-center" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content text-bg-dark">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalCadastroLabel">Cadastre-se</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group flex-nowrap">
+                  <input type="text" class="form-control" placeholder="Nome de usuário" id="usernameCadastro" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap mt-3">
+                  <input type="password" class="form-control" placeholder="Senha" id="senhaCadastro" aria-label="Password" aria-describedby="addon-wrapping">
+                  <button class="input-group-text" id="versenha">
+                  <i class="bi bi-eye"></i>
+                  </button>
+                </div>
+                <div class="input-group flex-nowrap mt-3">
+                  <input type="text" id="emailCadastro"class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                </div>
+                <p id="emailError" style="color: red; display: none;">Por favor, inclua o caractere "@" no email.</p>
+                <div class="data mt-3">
+                  <span>Data de nascimento:</span>
+                  <input type="date" value="" id="dataCadastro" placeholder="DD/MM/AAAA" required />
+                </div>
+                <select class="form-select mt-3 ms-5" aria-label="Default select example" id="tipoCadastro">
+                  <option selected value="-1">Tipo de usuário</option>
+                  <option value="1">Cliente</option>
+                  <option value="2">Nutricionista</option>
+                  <option value="3">Profissional relacionado a exercício físico</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btnNotBScancel" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btnSave" id="btnSave" data-bs-dismiss="modal">Salvar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-5">
+      <div class="circulo">
+      <img src="../Assets/Backgrounds/imgcoracao-transformed.jpg" alt="" srcset="">
+    </div>
+
+
+  </div>
+  </div>
+</div>
+  </main>
+  <script src="login.js"></script>
+</body>
+
+</html>

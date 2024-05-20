@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthSync</title>
+
+
+  <!--Fontes google-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital@1&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--css da pag-->
+  <link rel="stylesheet" href="viwpost.css">
+  <!--ICONE DA ABA-->
+  <link rel="icon" href="../Assets/Logo/Logo.png">
+
+</head>
+
+<body>
+  <!----- Navbar ----->
+  <nav class="pcolor navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="../pagInicial/index.html">
+        <img src="../Assets/Logo/Logo.png" alt="" width="100rem">
+      </a>
+      <div class="principais">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" id="loginNavLink">
+            <a class="nav-link active text-white" aria-current="page" href="../pagLogin/Login.html">Login</a>
+          </li>
+          <li class="nav-item d-none" id="dashboardNavDiv">
+            <a class="nav-link active text-white" href="" id="dashboardLink">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown d-none" id="userIcon">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="../Assets/image 13.png" alt="" width="50rem">
+            </a>
+            <ul class="dropdown-menu pcolor">
+              <div class="card" style="width: 17rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="nomeCardUser">Nome info</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary" id="emailCardUser">email@info</h6>
+                  <h6>Data de criação de conta</h6>
+                  <p class="card-text" id="dataCriacaoContaUser">DA/TA/23</p>
+                  <a href="#" class="card-link" id="logoutBtn">Logout</a>
+                  <a href="#" class="card-link">Ok</a>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="cabecalho">
+        <button class="btn voltar">
+          <a class="tiradec" href="../forum/forumInicial.html">
+            <i class="bi bi-arrow-left-circle"></i>
+            Voltar
+          </a>
+        </button>
+        <h3>Assunto: <span id="spanTipo"></span></h3>
+
+      </div>
+      <div class="container">
+        <div class="postagem border border-end-0 border-start-0">
+          <div class="titulo">
+            <h1 id="titulo"></h1>
+          </div>
+          <div class="infopost">
+            <h4 id="subtitulo"></h4>
+          </div>
+          <div class="corpo">
+            <p id="conteudoPost">
+              
+            </p>
+
+          </div>
+          <div class="criadop">
+            <h4>Criador do post: <span id="autorPost">Chat gpt</span></h4>
+          </div>
+        </div>
+      </div>
+  </main>
+
+<script src="viewpost.js"></script>
+</body>
+</html>

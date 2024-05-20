@@ -1,0 +1,115 @@
+
+/*----- Navbar -----*/
+.pcolor{
+    background-color: #0F5257;
+    color: white;
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.principais{
+    font-size: 20px;
+    padding-right: 100px;
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+   
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: transparent;
+}
+
+.card{
+    color: black;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+.navbar-logo {
+    float: left;
+}
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #001f36;
+    padding-bottom: 30px;
+}
+
+.container{
+ padding-top: 30px;
+}
+
+.voltar,
+.voltar:hover,
+.voltar:active,
+.voltar:focus,
+.voltar:target,
+.voltar:checked{
+   color: black;
+   background: #fbffcd;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.titulo{
+    color: white;
+    font-family: 'Tilt Neon', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.infopost{
+    color: #fbffcd;
+    margin-top: 20px;
+}
+
+.infopost h4{
+font-size: 20px;
+}
+
+.corpo{
+    margin-top: 50px;
+    color: white;
+
+}
+
+.postagem{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+.criadop{
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+.tiradec{
+    text-decoration: none;
+    color: black;
+}

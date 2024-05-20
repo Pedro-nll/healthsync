@@ -1,0 +1,608 @@
+/* .quadro-branco {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: x-large;
+} */
+
+
+
+.quadro-branco {
+    background-color: #dddddd;
+    color: #666666;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 100%; /*Monitor ultra wide*/
+    max-width: 1450px;
+    height: 600px; /*Monitor ultra wide*/
+    transition: all 0.2s;
+    resize: none;
+  }
+  .quadro-branco-2 {
+    background-color: #dddddd;
+    color: #666666;
+    padding: 2em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 100%; /*Monitor ultra wide*/
+    max-width: 1450px;
+    height: 40%; /*Monitor ultra wide*/
+    transition: all 0.2s;
+    resize: none;
+    margin: 20px;
+  }
+  
+  .quadro-branco:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+    resize: none;
+  }
+  
+  .quadro-branco:focus {
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #333333;
+    resize: none;
+  }
+
+.menu{
+    width: 100%;
+    background-color: #001f36;
+    height: 100vh;
+}
+
+.row{
+    margin-right: 0px;
+}
+
+
+.planos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+#obs{
+    justify-content: space-evenly;
+}
+
+.esqueletoplanos{
+    color: white;
+    font-family: 'Tilt Neon', sans-serif;
+    display: block;
+    width: 100%;
+}
+
+
+.container{
+    margin: 0;
+    width: 100%;
+    color: white;
+    font-family: 'Tilt Neon', sans-serif;
+
+}
+.central{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.opcoesmenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    margin: 10px;
+    border: white;
+    border-width:8px;
+}
+
+.icondisplay{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: #001f36;
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: normal;
+}
+
+.dropdown-menu{
+    background-color: transparent;
+    border: transparent;
+}
+
+.navbar {
+    background-color: #0F5257;
+}
+
+.pcolor{
+    padding: 0px;
+    color: white;
+    width: 100%;
+}
+
+
+.forum{
+    
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+
+.principais{
+    font-size: 20px;
+    padding-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+   
+}
+
+.navbar-logo {
+    float: left;
+}
+
+
+
+.card{
+    color: black;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+h2{
+    color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(.navbar-logo), .icon {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive #navbarLinks {
+        display: block;
+    }
+    .form-container {
+        flex-direction: column; 
+    }
+
+    .form-left, .form-middle, .form-right {
+        flex: auto;
+        margin-bottom: 20px;
+    }
+}
+label{
+color: #ddd;
+font-family: roboto, light;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+.divisoria{
+    background-color: #1F2627;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: wheat;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.workspace{
+    display:flex;
+}
+
+.img-fluid{
+    align-items: center;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 15px;
+}
+h2{
+    padding: 10px;
+}
+.btn-light{
+    font-family: 'Libre Baskerville', serif;
+    background-color: transparent;
+    border-color: transparent;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 40px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 200px;
+}
+
+.overlay {
+    display: none;
+  /*  transform: translate(-50%, -50%);*/
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    box-shadow: #1F2627;
+}
+
+
+
+.plc h5{
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+.plc p {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+
+.alturabotao{
+    height: 150px;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+ 
+}
+/* .quadro-branco {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: x-large;
+} */
+
+
+
+.quadro-branco {
+    background-color: #dddddd;
+    color: #666666;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 100%; /*Monitor ultra wide*/
+    max-width: 1450px;
+    height: 600px; /*Monitor ultra wide*/
+    transition: all 0.2s;
+    resize: none;
+  }
+  
+  .quadro-branco:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+    resize: none;
+  }
+  
+  .quadro-branco:focus {
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #333333;
+    resize: none;
+  }
+
+.menu{
+    width: 100%;
+    background-color: #001f36;
+    height: 100vh;
+}
+
+.row{
+    margin-right: 0px;
+}
+
+
+.planos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+#obs{
+    justify-content: space-evenly;
+}
+
+.esqueletoplanos{
+    color: white;
+    font-family: 'Tilt Neon', sans-serif;
+    display: block;
+    width: 100%;
+}
+
+
+.container{
+    margin: 0;
+    width: 100%;
+    color: white;
+    font-family: 'Tilt Neon', sans-serif;
+
+}
+.central{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.opcoesmenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    margin: 10px;
+    border: white;
+    border-width:8px;
+}
+
+.icondisplay{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: #001f36;
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: normal;
+}
+
+.dropdown-menu{
+    background-color: transparent;
+    border: transparent;
+}
+
+.navbar {
+    background-color: #0F5257;
+}
+
+.pcolor{
+    padding: 0px;
+    color: white;
+    width: 100%;
+}
+
+
+.forum{
+    
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+
+.principais{
+    font-size: 20px;
+    padding-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+   
+}
+
+.navbar-logo {
+    float: left;
+}
+
+
+
+.card{
+    color: black;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 15px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+h2{
+    color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(.navbar-logo), .icon {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive #navbarLinks {
+        display: block;
+    }
+    .form-container {
+        flex-direction: column; 
+    }
+
+    .form-left, .form-middle, .form-right {
+        flex: auto;
+        margin-bottom: 20px;
+    }
+}
+label{
+color: #ddd;
+font-family: roboto, light;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+.divisoria{
+    background-color: #1F2627;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: wheat;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.workspace{
+    display:flex;
+}
+
+.img-fluid{
+    align-items: center;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 15px;
+}
+h2{
+    padding: 10px;
+}
+.btn-light{
+    font-family: 'Libre Baskerville', serif;
+    background-color: transparent;
+    border-color: transparent;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 40px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 200px;
+}
+
+.overlay {
+    display: none;
+  /*  transform: translate(-50%, -50%);*/
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    box-shadow: #1F2627;
+}
+
+
+
+.plc h5{
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+.plc p {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+
+.alturabotao{
+    height: 150px;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+ 
+}
